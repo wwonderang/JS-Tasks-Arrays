@@ -80,3 +80,29 @@ alert(truncate("Вот, что мне хотелось бы сказать на 
   return str.slice(1);
 }
 alert( extractCurrencyValue('$120') );*/
+
+//Task 11
+/*let styles = ['Джаз', 'Блюз',];
+styles.push('Рок-н-ролл');
+styles[Math.floor(styles.length - 1) / 2] == 'Классика';
+alert(styles.shift());
+styles.unshift('Реп', 'Регги');
+console.log(styles);*/
+
+//Task 12
+/*function sumInput() {
+  let arr = [];
+  while(true) {
+    let value = prompt('Введите значение', 0);
+    if (!isFinite(value) || value === null || value === "") break;
+  
+     arr.push(+value);
+  }
+  let sum = 0;
+  for (let nums of arr) {
+    sum += nums;
+  }
+  return sum;
+}
+
+alert( sumInput() );*/
