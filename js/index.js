@@ -94,7 +94,7 @@ console.log(styles);*/
   let arr = [];
   while(true) {
     let value = prompt('Введите значение', 0);
-    if (!isFinite(value) || value === null || value === "") break;
+    if (isNaN(value) || value === null || value === "") break;
   
      arr.push(+value);
   }
@@ -106,3 +106,75 @@ console.log(styles);*/
 }
 
 alert( sumInput() );*/
+
+//Task 13
+/*function getMaxSubSum(arr) {
+  let maxSum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    let startedNum = 0;
+    for (let j = i; j < arr.length; j++) {
+      startedNum = arr[j];
+      maxSum = Math.max(maxSum, startedNum);
+    }
+  }
+  return maxSum;
+}
+alert(getMaxSubSum([1, -2, 3, -9, 11]));*/
+
+//Task 14
+/*function camelize(str) {
+  let arr = str.split('-');
+  let arrTwo = arr.map(function(word, index) {
+    if (index === 0) 
+    { return word; 
+    } else {
+    
+      return word[0].toUpperCase() + word.slice(1);
+  }
+  });
+  
+  return arrTwo.join('');
+}
+console.log(camelize("background-color"));
+console.log(camelize("list-style-image"));
+console.log(camelize("-webkit-transition"));*/
+
+//Task 15
+/*function filterRange(arr, a, b) {
+  return arr.filter(item => (item >= a && item <= b));
+}
+let arr = [5, 3, 8, 1];
+
+let filtered = filterRange(arr, 1, 4);
+
+alert( filtered );
+
+alert( arr );*/
+
+//Task 16
+/*function filterRangeInPlace(arr, a, b) {
+  return arr.slice(a, b);
+}
+let arr = [5, 3, 8, 1];
+
+filterRangeInPlace(arr, 1, 4); // удалены числа вне диапазона 1..4
+
+alert( arr ); // [3, 1]*/
+
+//Task 17
+/*let arr = [5, 2, 1, -10, 8];
+  arr.sort(function(a, b) {
+    return a - b;
+  });
+  alert(arr.reverse());*/
+
+// Task 18
+/*let arr = ["HTML", "JavaScript", "CSS"];
+function copySorted(arr) {
+  let arrTwo = arr.concat();
+  return arrTwo.sort();
+}
+let sorted = copySorted(arr);
+
+alert( sorted );
+alert( arr );*/
