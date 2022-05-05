@@ -257,3 +257,42 @@ let strings = ["кришна", "кришна", "харе", "харе",
 ];
 
 alert( unique(strings) );*/
+
+// Map / Set
+//Task 1
+/*function unique(arr) {
+  return Array.from(new Set(arr));
+}
+
+let values = ["Hare", "Krishna", "Hare", "Krishna",
+  "Krishna", "Krishna", "Hare", "Hare", ":-O"
+];
+
+alert( unique(values) ); // Hare,Krishna,:-O*/
+
+//Task 2
+
+/*let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
+
+function aclean(arr) {
+  let map = new Map();
+
+  for (let word of arr) {
+    let sorted = word.toLowerCase().split('').sort().join('');
+    map.set(sorted, word);
+  }
+  return Array.from(map.values());
+}
+
+alert( aclean(arr) );*/
+
+//Task 3
+/*let map = new Map();
+map.set("name", "John");
+for (let key of map.keys()) {
+alert(key);
+}
+let arr = Array.from(map.keys());
+arr.push("more");
+alert(arr);*/
+
