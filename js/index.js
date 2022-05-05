@@ -296,3 +296,67 @@ let arr = Array.from(map.keys());
 arr.push("more");
 alert(arr);*/
 
+//Object.keys, values, enties 
+//Task 1
+
+/*let salaries = {
+  "John": 100,
+  "Pete": 300,
+  "Mary": 250
+};
+function sumSalaries(salaries) {
+  let sum = 0;
+  for (let value of Object.values(salaries)) {
+    sum += value;
+  }
+  return sum;
+}
+
+alert( sumSalaries(salaries) );*/
+
+//Task 2
+/*let user = {
+  name: 'John',
+  age: 30
+};
+
+function count(obj) {
+  return Object.entries(obj).length;
+}
+
+alert( count(user) );*/
+
+
+//Destructurating
+
+//Task 1
+/*let user = {
+  name: "John",
+  years: 30
+};
+let { name, years: age, isAdmin = false} = user;
+alert(name);
+alert(age);
+alert(isAdmin);*/
+
+//Task 2
+let salaries = {
+  "John": 100,
+  "Pete": 300,
+  "Mary": 250
+};
+
+function topSalary(salaries) {
+  let max = 0;
+  let maxName = 0;
+  for (let [name, salary] of Object.entries(salaries)) {
+    if (max < salary) {
+      max = salary;
+      maxName = name;
+    }
+  }
+  return maxName;
+}
+
+alert(topSalary(salaries));
+
