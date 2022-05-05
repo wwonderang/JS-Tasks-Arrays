@@ -178,3 +178,82 @@ let sorted = copySorted(arr);
 
 alert( sorted );
 alert( arr );*/
+
+//Task 19
+/*let vasya = { name: "Вася", age: 25 };
+let petya = { name: "Петя", age: 30 };
+let masha = { name: "Маша", age: 28 };
+
+let users = [ vasya, petya, masha ];
+
+let names = users.map(item => item.name);
+alert(names);*/
+
+//Task 20
+/*let vasya = { name: "Вася", surname: "Пупкин", id: 1 };
+let petya = { name: "Петя", surname: "Иванов", id: 2 };
+let masha = { name: "Маша", surname: "Петрова", id: 3 };
+
+let users = [ vasya, petya, masha ];
+
+let usersMapped = users.map(user => ({
+  fullName: `${user.name} ${user.surname}`,
+  id: user.id,
+}));
+
+alert( usersMapped[0].id );
+alert( usersMapped[0].fullName );*/
+
+//Task 21
+/*let vasya = { name: "Вася", age: 25 };
+let petya = { name: "Петя", age: 30 };
+let masha = { name: "Маша", age: 28 };
+
+let arr = [ vasya, petya, masha ];
+
+function sortByAge(arr) {
+  arr.sort((a, b) => a.age > b.age ? 1 : -1);
+}
+alert(arr[0].name); 
+alert(arr[1].name); 
+alert(arr[2].name);*/
+
+//Task 22
+/*let arr = [1, 2, 3];
+
+function shuffle(arr) {
+  arr.sort(() => Math.random() - 0.5);
+}
+
+shuffle(arr);
+alert(arr);*/
+
+//Task 23
+/*let vasya = { name: "Вася", age: 25 };
+let petya = { name: "Петя", age: 30 };
+let masha = { name: "Маша", age: 29 };
+
+let arr = [ vasya, petya, masha ];
+
+function getAverageAge(users) {
+  return users.reduce((sum, user) => sum + user.age, 0) / users.length;
+}
+
+alert( getAverageAge(arr) );*/
+
+//Task 24
+/*function unique(arr) {
+  let result = [];
+  for (let str of arr) {
+    if (!result.includes(str)) {
+      result.push(str);
+    }
+  }
+  return result;
+}
+
+let strings = ["кришна", "кришна", "харе", "харе",
+  "харе", "харе", "кришна", "кришна", ":-O"
+];
+
+alert( unique(strings) );*/
